@@ -25,3 +25,37 @@
  * tienen un salario básico hora fijo de $6.000.oo y no tienen deducciones ni
  * bonificaciones.
  */
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author FX6300
+ * 
+ */
+public class taller3 {
+
+	/**
+	 * @param args the command line arguments
+	 */
+	public static void main(String[] args) {
+		/*------------------------------------Menu-------------------------------------------------------------
+		 */
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digita un número del taller o digita 0(cero)para salir");
+		int i = sc.nextInt();
+		/*------------------------------------Menu-------------------------------------------------------------
+		 */
+		/*------------------------------------1)punto------------------------------------------------------------
+		 */
+		if (i == 1) {
+			System.out.print(i + ") "
+					+ "Elabore un algoritmo que permita averiguar cuál es el nombre del mayor de 2 hermanos no gemelos. Como datos de entrada se tiene el nombre y la edad de las 2 personas.");
+			Scanner a = new Scanner(System.in);
+			if (i == 1) {
+
+			}
+
+		}
+	}
+}
