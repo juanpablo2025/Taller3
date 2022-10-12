@@ -51,11 +51,84 @@ public class taller3 {
 		if (i == 1) {
 			System.out.print(i + ") "
 					+ "Elabore un algoritmo que permita averiguar cuál es el nombre del mayor de 2 hermanos no gemelos. Como datos de entrada se tiene el nombre y la edad de las 2 personas.");
+
 			Scanner a = new Scanner(System.in);
-			if (i == 1) {
+			System.out.println("\n Digita nombre hermano 1");
+			String he = a.next();
+
+			Scanner aa = new Scanner(System.in);
+			System.out.println("\n Digita la edad");
+			int e = aa.nextInt();
+
+			Scanner b = new Scanner(System.in);
+			System.out.println("\n Digita nombre hermano 2");
+			String her = b.next();
+
+			Scanner bb = new Scanner(System.in);
+			System.out.println("\n Digita la edad");
+			int ed = bb.nextInt();
+
+			if (e > ed) {
+				System.out.print("\n el hermano mayor es " + he);
+				System.out.print("\n edad:" + e + "\n \n");
+			} else {
+				System.out.print("\n el hermano mayor es :" + her);
+				System.out.print("\n edad:" + ed + "\n \n");
+			}
+
+			taller3.main(null);
+
+		}
+
+		if (i == 2) {
+			System.out.print(i + ") "
+					+ "Elabore un algoritmo que lea el nombre, el salario bruto, las deducciones y las bonificaciones de dos trabajadores, e imprima el nombre del que más salario neto tiene.");
+
+			Scanner a = new Scanner(System.in);
+			System.out.println("\n Digita el nombre 1");
+			String e = a.next();
+
+			Scanner aa = new Scanner(System.in);
+			System.out.println("\n Digita el salario");
+			int ee = aa.nextInt();
+
+			Scanner aaa = new Scanner(System.in);
+			System.out.println("\n Digita las deducciones");
+			int eee = aaa.nextInt();
+
+			Scanner aaaa = new Scanner(System.in);
+			System.out.println("\n Digita las bonificaciones");
+			int eeee = aaaa.nextInt();
+
+			Scanner b = new Scanner(System.in);
+			System.out.println("\n Digita el nombre 2");
+			String o = b.next();
+
+			Scanner bb = new Scanner(System.in);
+			System.out.println("\n Digita el salario");
+			int oo = bb.nextInt();
+
+			Scanner bbb = new Scanner(System.in);
+			System.out.println("\n Digita las deducciones");
+			int ooo = bbb.nextInt();
+
+			Scanner bbbb = new Scanner(System.in);
+			System.out.println("\n Digita las bonificaciones");
+			int oooo = bbbb.nextInt();
+
+			int total1 = (ee - eee + eeee);
+			int total2 = (oo - ooo + oooo);
+
+			if (total1 > total2) {
+				System.out.print("\n el salario mayor es de " + e + " con " + total1 + "\n\n");
+
+			} else {
+				System.out.print("\n el salario mayor es de " + o + " con " + total2 + "\n\n");
 
 			}
 
+			taller3.main(null);
 		}
+
 	}
 }
