@@ -129,6 +129,45 @@ public class taller3 {
 
 			taller3.main(null);
 		}
+		if (i == 3) {
+			System.out.print(i + ") "
+					+ "Crear un algoritmo que le permita al usuario ingresar los datos de dos buses así: Placa, El número de pasajeros transportado y el valor del pasaje,y el computador le muestre la placa del bus que más dinero recogió.");
+			Scanner a = new Scanner(System.in);
+			System.out.println("\n Digita la placa del bus 1");
+			String e = a.next();
 
+			Scanner aa = new Scanner(System.in);
+			System.out.println("\n Digita el numero de pasajeros");
+			int ee = aa.nextInt();
+
+			Scanner aaa = new Scanner(System.in);
+			System.out.println("\n Digita el valor del pasaje");
+			int eee = aaa.nextInt();
+
+			Scanner b = new Scanner(System.in);
+			System.out.println("\n Digita la placa dele bus 2 ");
+			String o = b.next();
+
+			Scanner bb = new Scanner(System.in);
+			System.out.println("\n Digita el numero de pasajeros");
+			int oo = bb.nextInt();
+
+			Scanner bbb = new Scanner(System.in);
+			System.out.println("\n Digita el valor del pasaje");
+			int ooo = bbb.nextInt();
+
+			int total1 = oo * ooo;
+			int total2 = ee * eee;
+
+			if (ooo > eee) {
+				System.out.print("\n el dinero realizado es " + total1 + " del bus: " + o + "\n\n");
+
+			} else {
+				System.out.print("\n el dinero realizado es " + total2 + " del bus: " + e + "\n\n");
+
+			}
+
+			taller3.main(null);
+		}
 	}
 }
