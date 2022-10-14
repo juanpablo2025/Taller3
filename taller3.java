@@ -33,7 +33,7 @@ import java.util.Scanner;
  * @author FX6300
  * 
  */
-public class taller3 {
+public class Taller3 {
 
 	/**
 	 * @param args the command line arguments
@@ -76,7 +76,7 @@ public class taller3 {
 				System.out.print("\n edad:" + ed + "\n \n");
 			}
 
-			taller3.main(null);
+			Taller3.main(null);
 
 		}
 
@@ -127,7 +127,7 @@ public class taller3 {
 
 			}
 
-			taller3.main(null);
+			Taller3.main(null);
 		}
 		if (i == 3) {
 			System.out.print(i + ") "
@@ -167,7 +167,94 @@ public class taller3 {
 
 			}
 
-			taller3.main(null);
+			Taller3.main(null);
 		}
+                if (i == 4) {
+			System.out.print(i + ") "
+					+ "Elaborar un algoritmo donde el usuario ingrese la placa de un bus,número de pasajeros transportados y la ruta donde prestó el servicio ( A o B)\n el computador le debe mostrar el dinero que recolectó sabiendo que en la ruta\n A el pasaje es a $1.200.oo y en la B a $1.000.oo");
+			Scanner a = new Scanner(System.in);
+			System.out.println("\n Digita la placa del bus 1");
+			String e = a.next();
+
+			Scanner aa = new Scanner(System.in);
+			System.out.println("\n Digita el numero de pasajeros");
+			int ee = aa.nextInt();
+
+			Scanner aaa = new Scanner(System.in);
+			System.out.println("\n Digita el tipo de ruta ");
+			String eee = aaa.next();
+
+                        int  pasaje1= 1200;
+                        int pasaje2= 1000;
+                       
+                        
+                        int total1=pasaje1*ee;
+                         int total2=pasaje2*ee;
+                       
+                        
+			if(eee.equals("A")||eee.equals("a")) {
+				System.out.print("\n realizado " + total1 +" del bus: " + e + "\n\n");
+
+			} 
+                        if(eee.equals("B")||eee.equals("b")) {
+				System.out.print("\n realizado " + total2 +" del bus: " + e + "\n\n");
+
+			}else {
+				System.out.print("\n  Digita A o B en el tipo de ruta \n\n");
+                        }
+                        Taller3.main(null);
+		}
+                if (i == 5) {
+			System.out.print(i + ") "
+					+ "Crear un algoritmo que le permita al usuario ingresar el tipo de trabajador (FIJO o TEMPORAL) y con base en esto pueda imprimir el nombre y el salario neto, sabiendo que si es FIJO debe leer el nombre, el número de horas trabajadas, el salario básico hora,el total de deducciones y el total de bonificaciones y si es TEMPORAL solo\n debe leer el nombre y el número de horas trabajadas; estos trabajadores\n tienen un salario básico hora fijo de $6.000.oo y no tienen deducciones ni\n bonificaciones.");
+			Scanner a = new Scanner(System.in);
+			System.out.println("\n Digita el tipo de trabajador Temporal o Fijo");
+			String e = a.next();
+                        if(e.equals("Temporal")||e.equals("temporal")) {
+                        Scanner aa = new Scanner(System.in);
+                        System.out.println("\n Digital el nombre");
+			String nombre = a.next();
+			System.out.println("\n Digita las horas trabajadas");
+			int nht = aa.nextInt();
+                        int neto=nht*6000;
+                        
+                            System.out.print("\n nombre  " + nombre +" salario: " + neto + "\n\n");
+
+			} 
+                        if(e.equals("Fijo")||e.equals("fijo")) {
+                            
+                            Scanner aa = new Scanner(System.in);
+                            System.out.println("\n Digita las horas trabajadas");
+                            System.out.println("\n Digital el nombre");
+                            String nombre = a.next();
+                            System.out.println("\n Digita las horas trabajadas");
+                            int nht = aa.nextInt();
+                             Scanner aaa = new Scanner(System.in);
+                            System.out.println("\n Salario hora");
+                            int sbh = aaa.nextInt();
+                            Scanner aaaa = new Scanner(System.in);
+                            System.out.println("\n Digita las deducciones");
+                            int bon = aaaa.nextInt();
+                            Scanner aaaaa = new Scanner(System.in);
+                            System.out.println("\n Digita las bonificaciones");
+                            int ded = aaaaa.nextInt();
+                        
+                            int sneto=nht*sbh+bon-ded;
+                        
+                       
+				System.out.print("\n nombre  " + nombre +" salario: " + sneto + "\n\n");
+                           
+
+			}else{
+				System.out.print("\n  Digita Fijo o Temporal \n\n");
+         
+               }
+
+			Taller3.main(null);
+		}
+                if (i == 0) {
+            System.out.print("Cerrando...");
+            System.exit(0);
+        }
 	}
 }
